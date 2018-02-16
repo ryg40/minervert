@@ -1,0 +1,42 @@
+
+<script>
+$(document).ready(function() {
+    $('#example').DataTable( {
+        "pageLength": 50,
+        "processing": true,
+        "ajax": "/minerdata",
+        "columns": [
+            { "data": "coinName" },
+            { "data": "coinOwned" },
+            { "data": "coinOwnedVal" },
+            { "data": "coinExchange" },
+            { "data": "coinExchangeVal" }
+            ],
+
+            
+    } );
+} );
+</script>
+
+
+
+<table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Coin Name</th>
+                <th>Coin Count</th>
+                <th>Coin Dollar Amount</th>
+                <th>Coin on Exchange</th>
+                <th>Coin Value on Exchange</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+           <th>Coin Name</th>
+                <th>Coin Count</th>
+                <th>Coin Dollar Amount</th>
+                <th>Coin on Exchange</th>
+                <th>Coin Value on Exchange</th>
+            </tr>
+        </tfoot>
+    </table>

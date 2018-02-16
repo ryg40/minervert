@@ -1,0 +1,74 @@
+{
+    "data": [
+      {
+        "coinName": "litecoin",
+        "coinOwned": "0.26773",
+        "coinOwnedVal": "63.01",
+        "coinExchange": "0.00000",
+        "coinExchangeVal": "0.00"
+      },
+      {
+        "coinName": "maxcoin",
+        "coinOwned": "0.04289",
+        "coinOwnedVal": "0.00",
+        "coinExchange": "0.13851",
+        "coinExchangeVal": "0.00"
+      },
+      {
+        "coinName": "dash",
+        "coinOwned": "0.00000",
+        "coinOwnedVal": "0.00",
+        "coinExchange": "0.00000",
+        "coinExchangeVal": "0.00"
+      },
+      {
+        "coinName": "vertcoin",
+        "coinOwned": "0.50097",
+        "coinOwnedVal": "1.84",
+        "coinExchange": "0.00000",
+        "coinExchangeVal": "0.00"
+      },
+      {
+        "coinName": "feathercoin",
+        "coinOwned": "0.28456",
+        "coinOwnedVal": "0.06",
+        "coinExchange": "0.00000",
+        "coinExchangeVal": "0.00"
+      },
+      {
+        "coinName": "ethereum",
+        "coinOwned": "0.07764",
+        "coinOwnedVal": "72.81",
+        "coinExchange": "0.00000",
+        "coinExchangeVal": "0.00"
+      },
+      {
+        "coinName": "zcash",
+        "coinOwned": "0.04974",
+        "coinOwnedVal": "23.92",
+        "coinExchange": "0.00056",
+        "coinExchangeVal": "0.27"
+      },
+      {
+        "coinName": "zclassic",
+        "coinOwned": "0.01613",
+        "coinOwnedVal": "2.62",
+        "coinExchange": "0.00030",
+        "coinExchangeVal": "0.05"
+      },
+      {
+        "coinName": "monacoin",
+        "coinOwned": "0.64357",
+        "coinOwnedVal": "3.23",
+        "coinExchange": "0.00000",
+        "coinExchangeVal": "0.00"
+      },
+      {
+        "coinName": "bitcoin-gold",
+        "coinOwned": "0.00059",
+        "coinOwnedVal": "0.08",
+        "coinExchange": "0.00000",
+        "coinExchangeVal": "0.00"
+      }
+    ]
+}
