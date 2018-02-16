@@ -14,11 +14,9 @@ var app = express();
 var hbs = require('express-hbs');
 
 // Use `.hbs` for extensions and find partials in `views/partials`.
-app.engine('hbs', hbs.express4({
-  partialsDir: __dirname + '/views/partials'
-}));
+app.engine('hbs', hbs.express4());
 app.set('view engine', 'hbs');
-app.set('views', __dirname + '/views');
+
 
 // http://expressjs.com/api.html#app.locals
 // app.locals({
