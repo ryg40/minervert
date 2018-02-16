@@ -84,11 +84,11 @@ app.get('/minerdata', function (req, res) {
   
 
 
-app.get('/', function (req, res) {
-  res.render('miner');
-});
+// app.get('/', function (req, res) {
+//   res.render('miner');
+// });
 
-app.get('/boot', function (req, res) {
+app.get('/', function (req, res) {
   res.render('bootstrap4');
 });
 
