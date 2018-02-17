@@ -37,7 +37,6 @@ app.get('/minerdata', function (req, res) {
     async function mphfunction() {
      
       const mphurl = 'https://miningpoolhub.com/index.php?page=api&action=getuserallbalances&api_key=' + keys.mphKey;
-      console.log(mphurl);
       const mph = await axios.get(mphurl, {responseType: 'application/json'})
           .then(function (response) {
             var mphArr = Object.values(response.data.getuserallbalances.data);
