@@ -1,12 +1,15 @@
-var express = require('express');
-var exphbs  = require('express-handlebars');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
+const express = require('express');
+const exphbs  = require('express-handlebars');
+const path = require('path');
+const favicon = require('serve-favicon');
+const logger = require('morgan');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
 const data = require('./data/miner.json')
 const axios = require('axios')
+const mongoose = require('mongoose');
+const keys = require('./config/keys');
+
 
 var app = express();
 
@@ -32,7 +35,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/minerdata', function (req, res) {
     
     async function mphfunction() {
-      const mphurl = 'https://miningpoolhub.com/index.php?page=api&action=getuserallbalances&api_key=1b68f23f8c2759fcebe7acbc458b0db979b024d2cff051939a3441432449fe15';
+     
+      const mphurl = 'https://miningpoolhub.com/index.php?page=api&action=getuserallbalances&api_key=' + keys.mphKey;
+      console.log(mphurl);
       const mph = await axios.get(mphurl, {responseType: 'application/json'})
           .then(function (response) {
             var mphArr = Object.values(response.data.getuserallbalances.data);
