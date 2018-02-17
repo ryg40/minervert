@@ -5,7 +5,6 @@ const favicon = require('serve-favicon');
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
-const data = require('./data/miner.json')
 const axios = require('axios')
 const mongoose = require('mongoose');
 const keys = require('./config/keys');
